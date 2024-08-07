@@ -16,9 +16,9 @@ header {
   right: 0;
   z-index: 999;
   
-  background: linear-gradient(to bottom, #5941cf 0%, #141414 100%);
-  order-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  background: #1d1d1d;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 30px;
 }
 
 .container {
@@ -54,7 +54,7 @@ header {
   bottom: -5px;
   width: 100%;
   height: 2px;
-  background: #fff;
+  background: #5941CF;
   border-radius: 5px;
   transform: scaleX(0);
   transition: transform 0.5s;
@@ -86,15 +86,19 @@ header {
 }
 
 #Apresentacao {
+    margin: 100px;
     display: flex;
     padding: 0;
     margin: 0;
     background-color: #161616;
     justify-content: center;
   }
+  
   .boasvindas {
     max-width: 750px;
     padding: 100px 150px 100px 0;
+    margin-top: 100px;
+    padding: 20px;
   }
   .boasvindas h1 {
     color: #5941cf;
@@ -106,6 +110,13 @@ header {
     max-width: 60%px;
 
   }
+
+  #Apresentacao img{
+    object-fit: center;
+margin-top: 150px;
+padding: 20px;
+  }
+
   #Integrantes{
     margin-bottom: -100px;
     border-radius: 40px;
@@ -125,9 +136,11 @@ header {
       gap: 150px;
       margin-bottom: 75px;
       margin-top: 75px;
+
   }
   #Integrantes img{
       border-radius: 100%;
+      object-fit: cover;
   }
   #Integrantes h2{
       font-size: 70px;
@@ -140,10 +153,11 @@ header {
   #Contato{
     display: flex;
     justify-content: center;
-    background: url(https://placehold.co/1920x1565); 
+    background: url(../img/imgAzul.png) no-repeat center/cover; 
   }
 
 .forms{
+    filter: drop-shadow(6px ,6px, 6px, black);
     margin-top: -100px;
     z-index: 2;
     width: 530px;
@@ -177,14 +191,15 @@ header {
   line-height: 36px;
   background: #d9d9d9;
   border-radius: 12px;
-  font-weight: 400;
+  border: none;
+  outline: none;
+  font-weight: 500;
   font-size: 20px;
   width: 80%;
   margin-bottom: 10px;
   resize: none;
 
 }
-
 
 .forms form{
   display: flex;
@@ -193,8 +208,8 @@ header {
 }
 
 .forms input[type="submit"]{
-  background: #3D52D5;
-  border-color: #3D52D5;
+  background: #5941CF;
+  border-color: #5941CF;
   width: 155px;
   color: #fff;
   font-weight: 700;
@@ -205,11 +220,7 @@ header {
   position: relative;
   padding: 0;
   margin: 0;
-  overflow: hidden;
-  width: 1920px;
-}
-.bgfundo{
-  background: url(https://placehold.co/1920x819) no-repeat center/cover;
+  overflow: hidden;;
 }
 /* .banner{
     position: relative;
@@ -221,8 +232,10 @@ header {
      max-width: 100%;
     height: auto;
     filter: brightness(0.7)
-
+    margin-top: 150px;
+    padding: 20px;
 }
+
 .sobre h1 {
     color: #5941cf;
     font-size: 96px;
@@ -239,9 +252,13 @@ header {
   display: flex;
   justify-content: center
 }
+
 #img img{
-margin-right:107px
+margin-right:107px;
+margin-top: 130px;
+padding: 20px;
 }
+
 .titulo img{
 top:100px;
 }
@@ -253,30 +270,42 @@ footer {
     min-width: 100px;
     background: #161616;
     color: #fff;
-    justify-content: space-between;
-    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
   
   footer #dados {
     display: flex;
-    flex-direction: column;
+    margin: 0 4%;
+    justify-content: space-between;
   }
   
   #dados h2,
   #dados h3 {
-    margin: 0 4%;
+    margin: 0;
     font-size: 14px;
   }
   
   #dados h2 {
-    color: #5941cf;
+    margin-top: 10px;
+    color: #3d52d5;
+  }
+  
+  footer #dados:first-child {
+    margin-left: 14.5%;
+  }
+
+  .blabla{
+    margin-bottom: 40px;
   }
   
   #copyright {
     text-align: center;
-    margin: 0 auto 10px;
+    margin-top: 100px;
   }
 
-  #logo {
 
-}
+
+
+
